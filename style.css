@@ -66,3 +66,67 @@ header a, footer a {
 header a:hover, footer a:hover {
   color: #ddd;
 }
+
+/* Section styling */
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("images/mmdg.png");
+    background-size: cover;
+    background-position: center 65%;
+    background-attachment: fixed;
+}
+
+.homepage::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.35);
+}
+
+.homepage .content {
+    position: relative;
+    display: flex;
+    height: 85%;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage .content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.homepage .content .text {
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.homepage .content a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  text-transform:  uppercase;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: #fff;
+  border: 2px solid #fff;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .content a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.3);
+}
