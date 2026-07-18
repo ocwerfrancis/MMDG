@@ -38,6 +38,15 @@ header {
     justify-content: space-around;
 }
 
+.navbar input#menu-toggler {
+  display: none;
+}
+
+.navbar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+
 .navbar .all-links {
     display: flex;
     align-items: center;
@@ -129,4 +138,67 @@ header a:hover, footer a:hover {
 .homepage .content a:hover {
   color: #fff;
   background: rgba(255,255,255,0.3);
+}
+
+/* Mass programs */
+.mass-programs {
+    padding: 100px 20px;
+    background: #FFFFF0;
+}
+
+.mass-programs .section-title {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    color: #003262;
+    margin-bottom: 40px;
+}
+
+.schedule-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.schedule-table thead {
+    background: #003262;
+}
+
+.schedule-table thead th {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 16px 20px;
+    text-align: left;
+}
+
+.schedule-table tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:hover {
+    background: rgba(0, 50, 98, 0.05);
+}
+
+.schedule-table td[rowspan] {
+    font-weight: 600;
+    color: #003262;
+    vertical-align: middle;
+    border-right: 1px solid #eee;
 }
