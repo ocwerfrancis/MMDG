@@ -101,13 +101,14 @@ header a:hover, footer a:hover {
     position: relative;
     display: flex;
     height: 85%;
-    z-index: 5;
+    z-index: 1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .homepage .content h1 {
+    margin-top: 200px;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -120,6 +121,16 @@ header a:hover, footer a:hover {
     text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
 }
 
+.homepage .content h2 {
+    font-weight: 800;
+    color: #FFEF00;
+    margin-top: 20px; 
+}
+
+.homepage .content span {
+    color: #FFFFFf;
+    font-weight: 600;
+}
 .homepage .content a {
   color: #000;
   display: block;
@@ -201,4 +212,172 @@ header a:hover, footer a:hover {
     color: #003262;
     vertical-align: middle;
     border-right: 1px solid #eee;
+}
+
+/* Donate page */
+.donate {
+    padding: 140px 20px 100px;
+    background: #FFFFFf;
+}
+
+.donate-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.donate-image {
+    flex: 1;
+    border-radius: 8px;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.donate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.donate-content {
+    flex: 1;
+}
+
+.donate-content h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #003262;
+    margin-bottom: 20px;
+}
+.donate-content h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #620000;
+    margin-bottom: 20px;
+}
+
+.donate-intro {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.donate-details p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #080808;
+}
+
+.donate-details strong {
+    color: #003262;
+}
+
+.donate-content h3 {
+    margin: 30px 0 15px;
+    font-size: 22px;
+    color: #003262;
+}
+
+.donate-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.donate-table thead {
+    background: #003262;
+}
+
+.donate-table thead th {
+    color: #fff;
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.donate-table tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    color: #333;
+}
+
+.donate-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.donate-table tbody tr:hover {
+    background: rgba(0, 50, 98, 0.04);
+}
+
+/* Stack on smaller screens */
+@media (max-width: 768px) {
+    .donate-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* about page */
+.about-homepage {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    background: url("images/mmdg.png");
+    background-size: cover;
+    background-position: center 65%;
+}
+
+.about-homepage::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.35);
+}
+
+.about-homepage .about-content {
+    position: relative;
+    display: flex;
+    height: 85%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-homepage .about-content h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.about-homepage .about-content .text {
+    margin-top: 200px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.donate-content .schools {
+    margin-left: 40px;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
