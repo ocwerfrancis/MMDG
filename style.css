@@ -381,3 +381,16 @@ header a:hover, footer a:hover {
     flex-direction: column;
     gap: 15px;
 }
+
+.about-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #DFFFFD;
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0, 50, 98, 0.08);
+}
+
+.donate.about {
+    padding: 60px 20px 100px;
+}
