@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>MMDG</title>
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
-     <header>
+    <header>
 
         <nav class="navbar">
             <h2 class="logo"><a href="#">SHRINE OF OUR LADY</a></h2>
-
+            <input type="checkbox" id="menu-toggler">
             <label for="menu-toggler" id="hamburger-btn">
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
                 </svg>
 
             </label>
@@ -28,15 +30,16 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="devotions.html">Devotions</a></li>
                 <li><a href="index.html#programs">Programs</a></li>
-                <li><a href="index.html#rector">Rector</a></li>
+                <li><a href="rector.html">Rector</a></li>
                 <li><a href="donate.html">Donate</a></li>
-                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="index.html#apparitions">Apparitions</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
 
         </nav>
-     </header>
+    </header>
 
-     <main>
+    <main>
 
         <section class="homepage" id="home">
 
@@ -45,7 +48,8 @@
                 <div class="text">
                     <h1>Mary Mother of Divine Grace</h1>
                     <p>A Marian Shrine, a place of quiet prayer and contemplation dedicated to the Blessed Virgin Mary
-                    <br>Mother of God, Queen of Heaven, and tender intercessor for all who seek her aid.</p>
+                        <br>Mother of God, Queen of Heaven, and tender intercessor for all who seek her aid.
+                    </p>
                     <h2>⏱️OFFICE HOURS: <span>8:00am - 18:00pm <br>Tuesday to Sunday - Monday Closed</span></h2>
                 </div>
                 <a href="index.html#programs">Mass Programs</a>
@@ -116,22 +120,279 @@
             </div>
         </section>
 
+        <!-- Marian Apparitions -->
+        <section class="apparitions" id="apparitions">
 
-        <section id="devotions">
-            <h2>Devotions</h2>
-            <!-- content coming soon -->
+            <h2 class="section-title light">Marian Apparitions</h2>
+            <p class="apparitions-subtitle">Throughout history, Our Lady has appeared to draw souls back to God.</p>
+
+            <div class="apparitions-grid">
+
+                <div class="apparition-card">
+                    <img src="images/guadalupe.jpg" alt="Our Lady of Guadalupe">
+                    <div class="apparition-caption">
+                        <span class="location">Tepeyac Hill, Mexico &middot; 1531</span>
+                        <h3>Our Lady of Guadalupe</h3>
+                        <p class="visionary">Visionary: Juan Diego</p>
+                        <p class="visionary">The Blessed Virgin appeared to the humble peasant Juan Diego, leaving her
+                            image miraculously imprinted on his tilma,
+                            an image that defies scientific explanation to this day.</p>
+                    </div>
+                </div>
+
+                <div class="apparition-card">
+                    <img src="images/lourdes.jpg" alt="Our Lady of Lourdes">
+                    <div class="apparition-caption">
+                        <span class="location">Lourdes, France &middot; 1858</span>
+                        <h3>Our Lady of Lourdes</h3>
+                        <p class="visionary">Visionary: Bernadette Soubirous Appearing eighteen times in the Massabielle
+                            grotto, Our Lady revealed herself as the Immaculate Conception and bade the faithful to
+                            pray, do penance, and wash in the healing spring.</p>
+                    </div>
+                </div>
+
+                <div class="apparition-card">
+                    <img src="images/fatima.webp" alt="Our Lady of Fatima">
+                    <div class="apparition-caption">
+                        <span class="location">Cova da Iria, Portugal &middot; 1917</span>
+                        <h3>Our Lady of F&aacute;tima</h3>
+                        <p class="visionary">Visionary: L&uacute;cia, Francisco &amp; Jacinta
+                            <br>Six apparitions to three shepherd children, culminating in the Miracle of the Sun
+                            witnessed by 70,000 people. Our Lady entrusted three prophetic secrets and urged daily
+                            Rosary devotion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="apparition-card">
+                    <img src="images/guadalupe.jpg" alt="Our Lady of Medjugorje">
+                    <div class="apparition-caption">
+                        <span class="location">Medjugorje, Bosnia-Herzegovina &middot; 1981</span>
+                        <h3>Our Lady of Medjugorje</h3>
+                        <p class="visionary">Visionary: Mirjana, Ivanka &amp; companions <br>Since June 24, 1981, six
+                            visionaries have reported ongoing apparitions bearing messages of peace, prayer, fasting,
+                            conversion, and a call to return to God</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-        <section id="rector">
-            <h2>Rector</h2>
-            <!-- content coming soon -->
+        <section class="rosary-hero">
+            <h1>Rosary Meditations</h1>
+            <blockquote>
+                "The Rosary is the most powerful weapon to touch the Heart of Jesus."
+                &mdash; Pope John Paul II
+            </blockquote>
+
+            <div class="rosary-tabs">
+                <button class="tab-btn active" data-target="joyful">Joyful</button>
+                <button class="tab-btn" data-target="sorrowful">Sorrowful</button>
+                <button class="tab-btn" data-target="glorious">Glorious</button>
+                <button class="tab-btn" data-target="luminous">Luminous</button>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <!-- content coming soon -->
-        </section>
+        <section class="rosary-content">
+            <div class="mysteries-box">
 
-     </main>
+                <!-- JOYFUL -->
+                <div class="mystery-set active" id="joyful">
+                    <div class="mystery-header">
+                        <h2>Joyful Mysteries</h2>
+                        <span class="prayed-on">Prayed on Monday &amp; Saturday</span>
+                    </div>
+
+                    <ol class="mystery-list">
+                        <li>
+                            <h3>The Annunciation</h3>
+                            <p>"Hail, full of grace, the Lord is with thee." &mdash; Luke 1:28</p>
+                        </li>
+                        <li>
+                            <h3>The Visitation</h3>
+                            <p>"Blessed art thou among women, and blessed is the fruit of thy womb." &mdash; Luke 1:42
+                            </p>
+                        </li>
+                        <li>
+                            <h3>The Nativity</h3>
+                            <p>"She gave birth to her firstborn son and wrapped him in swaddling cloths." &mdash; Luke
+                                2:7</p>
+                        </li>
+                        <li>
+                            <h3>The Presentation in the Temple</h3>
+                            <p>"A sword will pierce your own soul too." &mdash; Luke 2:35</p>
+                        </li>
+                        <li>
+                            <h3>The Finding in the Temple</h3>
+                            <p>"Did you not know that I must be in my Father's house?" &mdash; Luke 2:49</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- SORROWFUL -->
+                <div class="mystery-set" id="sorrowful">
+                    <div class="mystery-header">
+                        <h2>Sorrowful Mysteries</h2>
+                        <span class="prayed-on">Prayed on Tuesday &amp; Friday</span>
+                    </div>
+
+                    <ol class="mystery-list">
+                        <li>
+                            <h3>The Agony in the Garden</h3>
+                            <p>"Father, if thou art willing, remove this cup from me." &mdash; Luke 22:42</p>
+                        </li>
+                        <li>
+                            <h3>The Scourging at the Pillar</h3>
+                            <p>"He was wounded for our transgressions." &mdash; Isaiah 53:5</p>
+                        </li>
+                        <li>
+                            <h3>The Crowning with Thorns</h3>
+                            <p>"They clothed him in a purple cloak, and twisting together a crown of thorns." &mdash;
+                                Mark 15:17</p>
+                        </li>
+                        <li>
+                            <h3>The Carrying of the Cross</h3>
+                            <p>"He went out, bearing his own cross." &mdash; John 19:17</p>
+                        </li>
+                        <li>
+                            <h3>The Crucifixion</h3>
+                            <p>"Father, into thy hands I commit my spirit." &mdash; Luke 23:46</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- GLORIOUS -->
+                <div class="mystery-set" id="glorious">
+                    <div class="mystery-header">
+                        <h2>Glorious Mysteries</h2>
+                        <span class="prayed-on">Prayed on Wednesday &amp; Sunday</span>
+                    </div>
+
+                    <ol class="mystery-list">
+                        <li>
+                            <h3>The Resurrection</h3>
+                            <p>"He is not here; for he has risen." &mdash; Matthew 28:6</p>
+                        </li>
+                        <li>
+                            <h3>The Ascension</h3>
+                            <p>"He was lifted up, and a cloud took him out of their sight." &mdash; Acts 1:9</p>
+                        </li>
+                        <li>
+                            <h3>The Descent of the Holy Spirit</h3>
+                            <p>"They were all filled with the Holy Spirit." &mdash; Acts 2:4</p>
+                        </li>
+                        <li>
+                            <h3>The Assumption of Mary</h3>
+                            <p>"A great sign appeared in heaven, a woman clothed with the sun." &mdash; Revelation 12:1
+                            </p>
+                        </li>
+                        <li>
+                            <h3>The Coronation of Mary</h3>
+                            <p>"On her head a crown of twelve stars." &mdash; Revelation 12:1</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- LUMINOUS -->
+                <div class="mystery-set" id="luminous">
+                    <div class="mystery-header">
+                        <h2>Luminous Mysteries</h2>
+                        <span class="prayed-on">Prayed on Thursday</span>
+                    </div>
+
+                    <ol class="mystery-list">
+                        <li>
+                            <h3>The Baptism in the Jordan</h3>
+                            <p>"This is my beloved Son, with whom I am well pleased." &mdash; Matthew 3:17</p>
+                        </li>
+                        <li>
+                            <h3>The Wedding at Cana</h3>
+                            <p>"Do whatever he tells you." &mdash; John 2:5</p>
+                        </li>
+                        <li>
+                            <h3>The Proclamation of the Kingdom</h3>
+                            <p>"The kingdom of God is at hand; repent, and believe." &mdash; Mark 1:15</p>
+                        </li>
+                        <li>
+                            <h3>The Transfiguration</h3>
+                            <p>"His face shone like the sun, and his garments became white as light." &mdash; Matthew
+                                17:2</p>
+                        </li>
+                        <li>
+                            <h3>The Institution of the Eucharist</h3>
+                            <p>"This is my body which is given for you." &mdash; Luke 22:19</p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const sets = document.querySelectorAll('.mystery-set');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                sets.forEach(s => s.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+    </script>
+
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-divider">
+            <span class="deco-line"></span>
+        </div>
+
+        <div class="footer-icons">
+            <span class="deco-star">&#10022;</span>
+            <span class="deco-cross">&#10013;</span>
+            <span class="deco-star">&#10022;</span>
+        </div>
+
+        <div class="footer-heading">
+            <span class="deco-star small">&#10022;</span>
+            Shrine of Our Lady
+            <span class="deco-star small">&#10022;</span>
+        </div>
+
+        <blockquote class="footer-quote">
+            "Holy Mary, Mother of God, pray for us sinners,<br>
+            now and at the hour of our death."
+        </blockquote>
+
+        <div class="footer-divider">
+            <span class="deco-line"></span>
+        </div>
+
+        <div class="footer-contact">
+            <div class="footer-col">
+                <h4>Information</h4>
+                <p>Your office address here</p>
+                <p>Tel: +256 000 000 000</p>
+                <p>Email: info@yourdomain.org</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Copyright © 2026 All Rights Reserved</span>
+        </div>
+
+    </footer>
 </body>
+
 </html>

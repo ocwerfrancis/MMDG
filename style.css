@@ -25,9 +25,9 @@ header {
     left: 0;
     width: 100%;
     z-index: 5;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    background: #003262; 
+    background: #003262;
 }
 
 .navbar {
@@ -39,12 +39,12 @@ header {
 }
 
 .navbar input#menu-toggler {
-  display: none;
+    display: none;
 }
 
 .navbar #hamburger-btn {
-  cursor: pointer;
-  display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar .all-links {
@@ -63,17 +63,19 @@ header {
     margin-left: 0;
 }
 
-header a, footer a {
-  margin-left: 40px;
-  text-decoration: none;
-  color: #fff;
-  height: 100%;
-  padding: 20px 0;
-  display: inline-block;
+header a,
+footer a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
 }
 
-header a:hover, footer a:hover {
-  color: #ddd;
+header a:hover,
+footer a:hover {
+    color: #ddd;
 }
 
 /* Section styling */
@@ -124,31 +126,32 @@ header a:hover, footer a:hover {
 .homepage .content h2 {
     font-weight: 800;
     color: #FFEF00;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .homepage .content span {
     color: #FFFFFf;
     font-weight: 600;
 }
+
 .homepage .content a {
-  color: #000;
-  display: block;
-  text-decoration: none;
-  text-transform:  uppercase;
-  font-size: 18px;
-  margin: 0 10px;
-  padding: 10px 30px;
-  border-radius: 6px;
-  background: #fff;
-  border: 2px solid #fff;
-  transition: 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .homepage .content a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.3);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* Mass programs */
@@ -254,6 +257,7 @@ header a:hover, footer a:hover {
     color: #003262;
     margin-bottom: 20px;
 }
+
 .donate-content h1 {
     font-family: "Roboto Slab", serif;
     font-size: 20px;
@@ -427,7 +431,8 @@ header a:hover, footer a:hover {
     font-size: 48px;
     font-weight: 700;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
-    padding-top: 90px; /* clears fixed header */
+    padding-top: 90px;
+    /* clears fixed header */
 }
 
 /* Devotions */
@@ -484,4 +489,545 @@ header a:hover, footer a:hover {
     .devotions-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.rector-box {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.rector-photo {
+    flex: 1;
+    max-width: 320px;
+}
+
+.rector-photo img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+}
+
+.rector-info {
+    flex: 2;
+}
+
+.rector-eyebrow {
+    color: #a33d2f;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rector-info h2 {
+    color: #003262;
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.rector-title {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rector-bio {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.rector-contact p {
+    color: #333;
+    font-size: 15px;
+}
+
+.rector-contact strong {
+    color: #003262;
+}
+
+@media (max-width: 700px) {
+    .rector-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rector-photo {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Apparitions page */
+/* Marian Apparitions */
+.apparitions {
+    background: #003262;
+    padding: 80px 20px;
+}
+
+.section-title.light {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.apparitions-subtitle {
+    text-align: center;
+    color: #d9e2ec;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.apparitions-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.apparition-card {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.apparition-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.apparition-card:hover img {
+    transform: scale(1.08);
+}
+
+.apparition-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.1) 70%);
+    z-index: 1;
+}
+
+.apparition-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 20px;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+
+.apparition-caption .location {
+    display: block;
+    color: #f4c542;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.apparition-caption h3 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.apparition-caption .visionary {
+    color: #d9e2ec;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 2;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease 0.1s, max-height 0.4s ease;
+}
+
+.apparition-card:hover .apparition-caption {
+    transform: translateY(-6px);
+}
+
+.apparition-card:hover .apparition-caption .visionary {
+    opacity: 1;
+    max-height: 400px;
+}
+
+@media (max-width: 900px) {
+    .apparitions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .apparitions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Rosary hero */
+.rosary-hero {
+    background: #003262;
+    padding: 140px 20px 60px;
+    text-align: center;
+}
+
+.rosary-hero h1 {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.rosary-hero blockquote {
+    color: #d9e2ec;
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.rosary-hero blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #a8bdd6;
+}
+
+.rosary-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #d9e2ec;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tab-btn:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #6fa8dc;
+    color: #6fa8dc;
+}
+
+/* Rosary content */
+.rosary-content {
+    background: #003262;
+    padding: 0 20px 100px;
+}
+
+.mysteries-box {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.mystery-set {
+    display: none;
+}
+
+.mystery-set.active {
+    display: block;
+}
+
+.mystery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mystery-header h2 {
+    color: #6fa8dc;
+    font-family: "Roboto Slab", serif;
+    font-size: 26px;
+}
+
+.mystery-header .prayed-on {
+    color: #a8bdd6;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.mystery-list {
+    list-style: none;
+    counter-reset: mystery-counter;
+}
+
+.mystery-list li {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    counter-increment: mystery-counter;
+}
+
+.mystery-list li:last-child {
+    border-bottom: none;
+}
+
+.mystery-list li::before {
+    content: counter(mystery-counter) ".";
+    color: #6fa8dc;
+    font-weight: 700;
+    min-width: 20px;
+}
+
+.mystery-list h3 {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.mystery-list p {
+    color: #c3d3e6;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+    background: #001A33;
+    /* deeper navy than header, matches reference */
+    color: #d9e2ec;
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.footer-divider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.deco-line {
+    width: 100%;
+    height: 1px;
+    background: rgba(244, 197, 66, 0.4);
+}
+
+.footer-icons {
+    color: #f4c542;
+    font-size: 18px;
+    letter-spacing: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-icons .deco-cross {
+    color: #d9e2ec;
+    font-size: 16px;
+}
+
+.footer-heading {
+    font-family: "Roboto Slab", serif;
+    color: #f4c542;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.deco-star.small {
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+.footer-quote {
+    font-style: italic;
+    color: #c3d3e6;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.footer-contact {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-col h4 {
+    color: #f4c542;
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #b8c6d9;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #b8c6d9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #f4c542;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: #b8c6d9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-socials a:hover {
+    color: #f4c542;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8098b3;
+}
+
+@media (max-width: 700px) {
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+  .navbar .all-links {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 30px 0;
+    background: #003262;
+    transition: left 0.3s ease;
+    z-index: 10;
+  }
+
+  .navbar #menu-toggler:checked ~ .all-links {
+    left: 0;
+  }
+
+  .navbar .all-links li {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .navbar .all-links li a {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .homepage .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .homepage .content .text {
+    font-size: 17px;
+  }
+
+  .homepage .content a {
+    font-size: 17px;
+    padding: 9px 20px;
+  }
+
+  .donate-wrapper {
+    flex-direction: column;
+  }
+
+  .apparitions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .devotions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .apparitions-grid {
+    grid-template-columns: 1fr;
+  }
 }
